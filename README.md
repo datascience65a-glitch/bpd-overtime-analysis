@@ -11,7 +11,7 @@ This project analyzes the **Boston Police Department (BPD) budget and payroll da
  **Extension Goals (if time permits):**  
 - Predict future overtime costs using ML models.  
 - Detect anomalies in officer pay patterns.  
-- Explore clustering of officers based on pay/OT behavior.  
+- Explore clustering of officers based on pay/(Overtime)OT behavior.  
 - Investigate systemic trends or inequalities.
 - Build classification models to predict which officers are likely to become “high overtime earners” in future years.  
 ---
@@ -19,7 +19,7 @@ This project analyzes the **Boston Police Department (BPD) budget and payroll da
 ## Dataset  
 The analysis uses multiple datasets:  
 - **Employee Earnings Data (2024)** – Payroll data for all Boston employees (filter for police).  
-- **Overtime Data (2012–2022)** – Court, detail, and special event OT hours.  
+- **Overtime Data (2012–2022)** – Court, detail, and special event (Overtime)OT hours.  
 - **BPD Roster** – Officer-level demographic info.  
 - **City of Boston Operating Budget (2025)** – Budget allocations.  
 

@@ -6,7 +6,7 @@ This project analyzes the **Boston Police Department (BPD) budget and payroll da
 - Shifts in funding across departments.  
 - Officer pay trends (regular vs overtime vs injury pay).  
 - Comparison of BPD pay with other Boston city employees.  
-- Overtime trends and forecasting for the upcoming year.  
+- Overtime trends and forecasting for the upcoming year.   
 
  **Extension Goals (if time permits):**  
 - Predict future overtime costs using ML models.  

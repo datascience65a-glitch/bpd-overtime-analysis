@@ -9,7 +9,7 @@ This project analyzes the **Boston Police Department (BPD) budget and payroll da
 
 ## Dataset and Dataset preprocessin 
 The analysis uses multiple datasets:  
-- **Employee Earnings Data (2024)** – Payroll data for all Boston employees (filter for police). This is the original dataset link is https://data.boston.gov/dataset/employee-earnings-report/resource/579a4be3-9ca7-4183-bc95-7d67ee715b6d. 
+- **Employee Earnings Data (2024)** – Payroll data for all Boston employees (filter for police). This is the original dataset link: https://data.boston.gov/dataset/employee-earnings-report/resource/579a4be3-9ca7-4183-bc95-7d67ee715b6d. 
 - **Cleaned_police_overtime_data**- The data that is filtered and cleaned with zero missing values.
 **Dataset preprocessing**
   - The original dataset had many missing values. So at the first we removed the columns which had the most missing values compared to the values present or the columns that were redundant. Column - QUINN_EDUCATION, TOTAL GROSS were dropped.
@@ -31,10 +31,10 @@ The analysis uses multiple datasets:
   
 ## Models:
 Data was split into X and Y dataset. X columns represent the input(The numerical columns other than OVERTIME) and Y column represent the output(OVERTIME). Then models were used:
-- XGBoost will be the main model to be used with results mean absolute error: $2756.10 and r^2 score = 0.820. Additionally, there are more models that are going to be used those are:
-    - Random Forest Regressor with R2 score = 0.813 and mean absolute error:$2838.64
-   - Linear Regression with R2 score = 0.709 and mean absolute error:$4420.76
-There are shape value explainer also added to visualize which inputs are important thereby affecting the output.
+- XGBoost will be the main model to be used with results mean absolute error: $2756.10 and $r^2$ score = 0.820. Additionally, there are more models that are going to be used those are:
+    - Random Forest Regressor with $R^2$ score = 0.813 and mean absolute error:$2838.64
+   - Linear Regression with $R^2$ score = 0.709 and mean absolute error:$4420.76   
+- There are shape value explainers also added to visualize which inputs are important thereby affecting the output.
 Additionally clustering was done among officers using KMeans based on pay patterns . We have also summarized the clustering analysis.
 
 ## Goals achieved:  

@@ -32,10 +32,10 @@ The analysis uses multiple datasets:
 ## Models:
 Data was split into X and Y dataset. X columns represent the input(The numerical columns other than OVERTIME) and Y column represent the output(OVERTIME). Then models were used:
 - XGBoost will be the main model to be used with results mean absolute error: $2756.10 and r^2 score = 0.820. Additionally, there are more models that are going to be used those are:
-- Random Forest Regressor with R2 score = 0.813 and mean absolute error:$2838.64
-- Linear Regression with R2 score = 0.709 and mean absolute error:$4420.76
-  There are shape value explainer also added to visualize which inputs are important thereby affecting the output.
-  Additionally clustering was done among officers using KMeans based on pay patterns . We have also summarized the clustering analysis.
+    - Random Forest Regressor with R2 score = 0.813 and mean absolute error:$2838.64
+   - Linear Regression with R2 score = 0.709 and mean absolute error:$4420.76
+There are shape value explainer also added to visualize which inputs are important thereby affecting the output.
+Additionally clustering was done among officers using KMeans based on pay patterns . We have also summarized the clustering analysis.
 
 ## Goals achieved:  
 - Shifts in funding across departments.  
@@ -44,7 +44,7 @@ Data was split into X and Y dataset. X columns represent the input(The numerical
 - Prediction of overtime expenditure based on regular,retro,injure,other payments given to the employees by data preprocessing and using different models with results.
 - Explored clustering of officers based on scatter plot of overtime pay vs regular pay.
    
-## Future Extension Goals:**  
+## Future Extension Goals: 
 - Predict future overtime costs using ML models.  
 - Detect anomalies in officer pay patterns.   
 - Investigate systemic trends or inequalities.

@@ -3,17 +3,9 @@
 ## Project Overview  
 This project analyzes the **Boston Police Department (BPD) budget and payroll data (2024)** to understand:   
 - Shifts in funding across departments.  
-- Officer pay trends (regular vs overtime vs injury pay).  
+- Officer pay trends (regular vs overtime pay).  
 - Employees with highest regular pay with respect to other Boston city employees.  
-- Prediction of overtime expenditure based on regular,retro,injure,other payments given to the employees.
-
- **Extension Goals (if time permits):**  
-- Predict future overtime costs using ML models.  
-- Detect anomalies in officer pay patterns.  
-- Explore clustering of officers based on pay/(Overtime)OT behavior.  
-- Investigate systemic trends or inequalities.
-- Build classification models to predict which officers are likely to become “high overtime earners” in future years.  
----
+- Prediction of overtime expenditure based on regular,retro,injure,other payments given to the employees using regression.
 
 ## Dataset and Dataset preprocessin 
 The analysis uses multiple datasets:  
@@ -22,30 +14,45 @@ The analysis uses multiple datasets:
 **Dataset preprocessing**
   - The original dataset had many missing values. So at the first we removed the columns which had the most missing values compared to the values present or the columns that were redundant. Column - QUINN_EDUCATION, TOTAL GROSS were dropped.
   - Data was the preprocessed with filling of missing values using data augmentation tools like SimpleImputer, IterativeImputer
-  - Dataset was then ready with 14057 data value with zero missing values.
+  - Dataset was then ready with 14057 data values and with zero missing values.
 
 ---
 ## Data Visualization
 - Data will be visualized using the pie charts and the bar plots.
 - Data that was preprocessed was visualized by seeing:
+   - Distribution of pay components for different apartments using bar and pie plots
+   - Distribution of regular pay for different departments with pie and bar plots.
    - Top 10 police employees by total pay using the bar plot
    - Relationship between Regular pay and overtime pay using the scatter plot
-   - Correlation Heatmap between the pay components
-   - Distribution of pay components using bar and pie plots
-   - Distribution of regular pay for different departments with pie and bar plots.
-
+   - Correlation Heatmap among the pay components
+   
 ## Train/Test Strategy:
 - Data will be split into 80-20 split. 80 percent of the data will be used as a training data and the later 20 percent would be used as a test data to check the performances of the models.
   
-##Models:
+## Models:
+Data was split into X and Y dataset. X columns represent the input(The numerical columns other than OVERTIME) and Y column represent the output(OVERTIME). Then models were used:
 - XGBoost will be the main model to be used with results mean absolute error: $2756.10 and r^2 score = 0.820. Additionally, there are more models that are going to be used those are:
-- Random Forest Regressor
--Linear Regression 
+- Random Forest Regressor with R2 score = 0.813 and mean absolute error:$2838.64
+- Linear Regression with R2 score = 0.709 and mean absolute error:$4420.76
+  There are shape value explainer also added to visualize which inputs are important thereby affecting the output.
+  Additionally clustering was done among officers using KMeans based on pay patterns . We have also summarized the clustering analysis.
+
+## Goals achieved:  
+- Shifts in funding across departments.  
+- Officer pay trends (regular vs overtime pay).  
+- Employees with highest regular pay with respect to other Boston city employees.  
+- Prediction of overtime expenditure based on regular,retro,injure,other payments given to the employees by data preprocessing and using different models with results.
+- Explored clustering of officers based on scatter plot of overtime pay vs regular pay.
+   
+## Future Extension Goals:**  
+- Predict future overtime costs using ML models.  
+- Detect anomalies in officer pay patterns.   
+- Investigate systemic trends or inequalities.
+- Build classification models to predict which officers are likely to become “high overtime earners” in future years.  
+---
 
 ## Tech Stack  
 - **Python** (data preprocessing, ML models)  
 - **Google Colab** (development environment, notebooks)  
-- **Power BI** (interactive dashboards, visual storytelling)  
-- **ArcGIS** (geospatial analysis – if applicable)  
 
 ---

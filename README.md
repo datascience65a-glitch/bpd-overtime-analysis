@@ -38,9 +38,9 @@ Data was split into X and Y dataset. X columns represent the input(The numerical
 Additionally clustering was done among officers using KMeans based on pay patterns . We have also summarized the clustering analysis.
 
 ## Codes:
-- Boston_Police_Overtime.ipynb explains the data preprocessing and cleaning part. It also visualizes distribution of regular pay for different apartments using bar and pie plots
-- data_visualization.ipynb explains the data visualization part of the project.
-- ML_Model_DS_Project.ipynb explains the models part of the project.
+- Boston_Police_Overtime.ipynb explains the data preprocessing and cleaning part. It also visualizes distribution of regular pay for different apartments using bar and pie plots.This code uses employee_earnings_report_2024.csv and creates cleaned_police_overtime_data.csv.
+- data_visualization.ipynb explains the data visualization part of the project. This code uses cleaned_police_overtime_data.csv.
+- ML_Model_DS_Project.ipynb explains the models part of the project. This code uses cleaned_police_overtime_data.csv.
 
 
 ## Goals achieved:  

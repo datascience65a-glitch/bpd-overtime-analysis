@@ -7,7 +7,7 @@ This project analyzes the **Boston Police Department (BPD) budget and payroll da
 - Employees with highest regular pay with respect to other Boston city employees.  
 - Prediction of overtime expenditure based on regular,retro,injure,other payments given to the employees using regression.
 
-## Dataset and Dataset preprocessin 
+## Dataset and Dataset preprocessing 
 The analysis uses multiple datasets:  
 - **Employee Earnings Data (2024)** – Payroll data for all Boston employees (filter for police). This is the original dataset link: https://data.boston.gov/dataset/employee-earnings-report/resource/579a4be3-9ca7-4183-bc95-7d67ee715b6d. 
 - **Cleaned_police_overtime_data**- The data that is filtered and cleaned with zero missing values.

@@ -20,11 +20,11 @@ The analysis uses single dataset:
 ## Data Visualization
 - Data will be visualized using the pie charts and the bar plots.
 - Data that was preprocessed was visualized by seeing:
-   - Distribution of pay components for different apartments using bar and pie plots
    - Distribution of regular pay for different departments with pie and bar plots.
    - Top 10 police employees by total pay using the bar plot
    - Relationship between Regular pay and overtime pay using the scatter plot
    - Correlation Heatmap among the pay components
+   - Distribution of pay components (regular+injury+other+detail+overtime) using bar and pie plots
    
 ## Train/Test Strategy:
 - Data will be split into 80-20 split. 80 percent of the data will be used as a training data and the later 20 percent would be used as a test data to check the performances of the models.
@@ -36,6 +36,12 @@ Data was split into X and Y dataset. X columns represent the input(The numerical
    - Linear Regression with $R^2$ score = 0.709 and mean absolute error:$4420.76   
 - There are shape value explainers also added to visualize which inputs are important thereby affecting the output.
 Additionally clustering was done among officers using KMeans based on pay patterns . We have also summarized the clustering analysis.
+
+## Codes:
+- Boston_Police_Overtime.ipynb explains the data preprocessing and cleaning part. It also visualizes distribution of regular pay for different apartments using bar and pie plots
+- data_visualization.ipynb explains the data visualization part of the project.
+- ML_Model_DS_Project.ipynb explains the models part of the project.
+
 
 ## Goals achieved:  
 - Shifts in funding across departments.  

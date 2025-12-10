@@ -50,13 +50,9 @@ Additionally clustering was done among officers using KMeans based on pay patter
 - Employees with highest regular pay with respect to other Boston city employees.  
 - Prediction of overtime expenditure based on regular,retro,injure,other payments given to the employees by data preprocessing and using different models with results.
 - Explored clustering of officers based on scatter plot of overtime pay vs regular pay.
-   
-## Future Extension Goals: 
-- Predict future overtime costs using ML models.  
-- Detect anomalies in officer pay patterns.   
-- Investigate systemic trends or inequalities.
-- Build classification models to predict which officers are likely to become “high overtime earners” in future years.  
----
+- Predicted overtime costs for different dataset that is 2023 data.
+- Build classification model to predict which officers are likely to become “high overtime earners” in 2024 data.
+  
 
 ## Tech Stack  
 - **Python** (data preprocessing, ML models)  

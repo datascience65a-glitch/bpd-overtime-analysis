@@ -39,7 +39,7 @@ PIP = pip
 
 install:<br/>
 	$(PIP) install flask<br/>
-	$(PIP) install flask-cors<br/>
+	$(PIP) install flask_cors<br/>
 	$(PIP) install pandas<br/>
 	$(PIP) install numpy<br/>
 	$(PIP) install scikit-learn<br/>

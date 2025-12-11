@@ -18,7 +18,7 @@ This project analyzes the **Boston Police Department (BPD) budget and payroll da
 5. Import the Employee Earnings Data (2023).
 6. Execute **Boston_Police_Overtime_test.ipynb** to create the cleaned test dataset **Cleaned_data_test.csv**.
 7. Run **ML_Model_DS_test.ipynb** to assess the performance of **XGBoost** and **Random Forest Regressor** on the 2023 test data.
-8. Run the project website featuring a dashboard, analytical insights, and an overtime cost prediction interface powered by the trained **XGBoost** model and **Cleaned_police_overtime_data.csv**.
+8. Execute the project website featuring a dashboard, analytical insights, and an overtime cost prediction interface powered by the trained **XGBoost** model and **Cleaned_police_overtime_data.csv**.
 
 ## Dataset and Dataset preprocessing 
 The analysis uses single dataset:  

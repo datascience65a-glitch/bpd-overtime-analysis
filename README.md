@@ -8,6 +8,16 @@ This project analyzes the **Boston Police Department (BPD) budget and payroll da
 - Employees with highest regular pay with respect to other Boston city employees.  
 - Prediction of overtime expenditure based on regular,retro,injure,other payments given to the employees using regression.
 
+## Workflow:
+1. Take Employee Earnings Data (2024).
+2. Run **Boston_Police_Overtime.ipynb** to generate **Cleaned_police_overtime_data.csv**.
+3. Use **data_visualization.ipynb** to create visualizations from **Cleaned_police_overtime_data.csv**.
+4. Run **ML_Model_DS_Project.ipynb** to train and test **XGBoost**, **Random Forest Regressor**, and **Linear Regression** models using the cleaned 2024 data.
+5. Take Employee Earnings Data (2023).
+6. Run **Boston_Police_Overtime_test.ipynb** to generate **Cleaned_data_test.csv**.
+7. Use **ML_Model_DS_test.ipynb** to test **XGBoost** and **Random Forest Regressor** on the 2023 cleaned data.
+8. Create the website with a dashboard, data analysis explanation, and an XGBoost-based overtime cost prediction feature using **Cleaned_police_overtime_data.csv**.
+
 ## Dataset and Dataset preprocessing 
 The analysis uses single dataset:  
 - **Employee Earnings Data (2024)** – Payroll data for all Boston employees (filter for police). This is the original dataset link: https://data.boston.gov/dataset/employee-earnings-report/resource/579a4be3-9ca7-4183-bc95-7d67ee715b6d.
@@ -44,6 +54,9 @@ Data was split into X and Y dataset. X columns represent the input(The numerical
    - Linear Regression with $R^2$ score = 0.709 and mean absolute error:$4420.76   
 - There are shape value explainers also added to visualize which inputs are important thereby affecting the output.
 Additionally clustering was done among officers using KMeans based on pay patterns . We have also summarized the clustering analysis.
+
+Testing with 2023 data
+The Cleaned_data_test which is cleaned dataset of Employee Earnings Data (2023) 
 
 ## Codes:
 - Boston_Police_Overtime.ipynb explains the data preprocessing and cleaning part. It also visualizes distribution of regular pay for different apartments using bar and pie plots.This code uses employee_earnings_report_2024.csv and creates cleaned_police_overtime_data.csv.

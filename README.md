@@ -9,6 +9,45 @@ This project analyzes the **Boston Police Department (BPD) budget and payroll da
 - Prediction of overtime expenditure based on regular,retro,injure,other,detail payments and postal code given of the employees using regression.
 - Classification of overtime expenditure based on regular,retro,injure,other,detail payments and postal code given of the employees
 - Website Boston Police Department (BPD) Budget & Payroll Analysis explaining the workflow and predicting the overtime expenditure using machine learning models.
+  
+## Makefile
+Google Colab Makefile (Python Only – No Website)
+<br/>
+PYTHON = python3
+<br/>
+PIP = pip
+<br/>
+
+Install Dependencies
+<br/>
+install:<br/>
+	$(PIP) install numpy==2.0.2<br/>
+	$(PIP) install pandas==2.2.2<br/>
+	$(PIP) install scikit-learn==1.6.1<br/>
+	$(PIP) install matplotlib==3.10.0<br/>
+	$(PIP) install xgboost<br/>
+
+
+ Run placeholder (edit if needed)
+
+run:<br/>
+	@echo "Run your notebook or script manually in Google Colab."
+
+
+Makefile for Website (VS Code / Local Machine)<br/>
+PIP = pip
+
+install:<br/>
+	$(PIP) install flask<br/>
+	$(PIP) install flask-cors<br/>
+	$(PIP) install pandas<br/>
+	$(PIP) install numpy<br/>
+	$(PIP) install scikit-learn<br/>
+	$(PIP) install xgboost<br/>
+
+
+run:<br/>
+	python app2.py
 
 ## Workflow:
 1. Import the Employee Earnings Data (2024).
@@ -69,7 +108,10 @@ Xg BOOST Model Mean Absolute Error (MAE): $10,010.79 R² Score: 0.045
 - ML_Model_DS_Project.ipynb explains the models part of the project. This code uses cleaned_police_overtime_data.csv.
 - Classification_model.ipynb explains the classification part to predict the high overtime earners and low overtime earners.This code uses cleaned_police_overtime_data.csv.
 - Boston_Police_Overtime_test.ipynb creates the cleaned dataset of Employee Earnings Data (2023) which is Cleaned_data_test.
-- ML_Model_DS_test.ipynb this code tests the Cleaned_data_test dataset using the Random Forest Regressor and Xgboost models.
+- ML_Model_DS_test.ipynb this code tests the Cleaned_data_test dataset using the Random Forest Regressor and Xgboost models.xgb_model.json was created and saved.
+
+# Data_Science Folder:
+- This folder contains the complete codebase for the Boston Police Department (BPD) Budget & Payroll Analysis website. It includes the dashboard components, machine learning model scripts, and the main application file app2.py, which runs both the frontend and backend of the project. The file xgb_model.json contains the trained XGBoost model integrated into the system for overtime cost prediction.
 
 ## Goals achieved:  
 - Shifts in funding across departments.  

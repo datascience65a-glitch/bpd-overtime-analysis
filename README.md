@@ -1,4 +1,4 @@
-https://youtu.be/PPNYpHPYAgs Team DataJustice
+(https://youtu.be/WeJyDgC8ZJU) Team DataJustice
 # Boston Police Department (BPD) Budget & Payroll Analysis  
 
 ## Project Overview  
@@ -130,5 +130,12 @@ Xg BOOST Model Mean Absolute Error (MAE): $10,010.79 R² Score: 0.045
 - **Visual Studio Code** (development environment)
 - **Flask**
 - **Javascript** 
-- **HTML/CSS Boostrap** 
+- **HTML/CSS Boostrap**
+  
+# About us:
+- Kaushik Joshi
+- Ashish Joshi
+- Siddhanth Kalyanaraman
+- Vidney Jadhav
+- Adithya Nayak
 

@@ -21,7 +21,7 @@ The analysis uses single dataset:
 **Dataset preprocessing**
   - The dataset Employee Earnings Data (2023) had many missing values. So at the first we removed the columns which had the most missing values compared to the values present or the columns that were redundant. Column - QUINN_EDUCATION, TOTAL GROSS were dropped.
   - Data was the preprocessed with filling of missing values using data augmentation tools like SimpleImputer, IterativeImputer
-  - Dataset was then ready with 14057 data values and with zero missing values.
+  - Dataset was then ready with 14004 data values and with zero missing values.
   
 
 ---

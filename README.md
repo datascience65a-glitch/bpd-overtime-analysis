@@ -34,7 +34,7 @@ run:<br/>
 	@echo "Run your notebook or script manually in Google Colab."
 
 
-Makefile for Website (VS Code / Local Machine)<br/>
+Makefile for Website (VS Code / Local Machine Terminal)<br/>
 PIP = pip
 
 install:<br/>

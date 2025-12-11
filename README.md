@@ -12,11 +12,17 @@ This project analyzes the **Boston Police Department (BPD) budget and payroll da
 The analysis uses single dataset:  
 - **Employee Earnings Data (2024)** – Payroll data for all Boston employees (filter for police). This is the original dataset link: https://data.boston.gov/dataset/employee-earnings-report/resource/579a4be3-9ca7-4183-bc95-7d67ee715b6d.
 -  **Employee Earnings Data (2023)** - Payroll data for all Boston employees https://data.boston.gov/dataset/employee-earnings-report/resource/6b3c5333-1dcb-4b3d-9cd7-6a03fb526da7
-- **Cleaned_police_overtime_data**- The data that is filtered and cleaned with zero missing values.
+- **Cleaned_police_overtime_data**- The Employee Earnings Data (2024) data that is filtered and cleaned with zero missing values.
 **Dataset preprocessing**
-  - The original dataset had many missing values. So at the first we removed the columns which had the most missing values compared to the values present or the columns that were redundant. Column - QUINN_EDUCATION, TOTAL GROSS were dropped.
+  - The original dataset  Employee Earnings Data (2024) had many missing values. So at the first we removed the columns which had the most missing values compared to the values present or the columns that were redundant. Column - QUINN_EDUCATION, TOTAL GROSS were dropped.
   - Data was the preprocessed with filling of missing values using data augmentation tools like SimpleImputer, IterativeImputer
   - Dataset was then ready with 14057 data values and with zero missing values.
+- **Cleaned_data_test**- The Employee Earnings Data (2023) data that is filtered and cleaned with zero missing values.
+**Dataset preprocessing**
+  - The dataset Employee Earnings Data (2023) had many missing values. So at the first we removed the columns which had the most missing values compared to the values present or the columns that were redundant. Column - QUINN_EDUCATION, TOTAL GROSS were dropped.
+  - Data was the preprocessed with filling of missing values using data augmentation tools like SimpleImputer, IterativeImputer
+  - Dataset was then ready with 14057 data values and with zero missing values.
+  
 
 ---
 ## Data Visualization

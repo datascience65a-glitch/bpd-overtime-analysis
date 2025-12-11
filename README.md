@@ -6,17 +6,19 @@ This project analyzes the **Boston Police Department (BPD) budget and payroll da
 - Shifts in funding across departments.  
 - Officer pay trends (regular vs overtime pay).  
 - Employees with highest regular pay with respect to other Boston city employees.  
-- Prediction of overtime expenditure based on regular,retro,injure,other payments given to the employees using regression.
+- Prediction of overtime expenditure based on regular,retro,injure,other,detail payments and postal code given of the employees using regression.
+- Classification of overtime expenditure based on regular,retro,injure,other,detail payments and postal code given of the employees
+- Website Boston Police Department (BPD) Budget & Payroll Analysis explaining the workflow and predicting the overtime expenditure using machine learning models.
 
 ## Workflow:
-1. Take Employee Earnings Data (2024).
-2. Run **Boston_Police_Overtime.ipynb** to generate **Cleaned_police_overtime_data.csv**.
-3. Use **data_visualization.ipynb** to create visualizations from **Cleaned_police_overtime_data.csv**.
-4. Run **ML_Model_DS_Project.ipynb** to train and test **XGBoost**, **Random Forest Regressor**, and **Linear Regression** models using the cleaned 2024 data.
-5. Take Employee Earnings Data (2023).
-6. Run **Boston_Police_Overtime_test.ipynb** to generate **Cleaned_data_test.csv**.
-7. Use **ML_Model_DS_test.ipynb** to test **XGBoost** and **Random Forest Regressor** on the 2023 cleaned data.
-8. Create the website with a dashboard, data analysis explanation, and an XGBoost-based overtime cost prediction feature using **Cleaned_police_overtime_data.csv**.
+1. Import the Employee Earnings Data (2024).
+2. Execute **Boston_Police_Overtime.ipynb** to produce the cleaned dataset **Cleaned_police_overtime_data.csv**.
+3. Run **data_visualization.ipynb** to generate visualizations and analytical summaries based on the cleaned 2024 dataset.
+4. Use **ML_Model_DS_Project.ipynb** to train and evaluate three machine learning models—**XGBoost**, **Random Forest Regressor**, and **Linear Regression**—using the prepared 2024 data.
+5. Import the Employee Earnings Data (2023).
+6. Execute **Boston_Police_Overtime_test.ipynb** to create the cleaned test dataset **Cleaned_data_test.csv**.
+7. Run **ML_Model_DS_test.ipynb** to assess the performance of **XGBoost** and **Random Forest Regressor** on the 2023 test data.
+8. Run the project website featuring a dashboard, analytical insights, and an overtime cost prediction interface powered by the trained **XGBoost** model and **Cleaned_police_overtime_data.csv**.
 
 ## Dataset and Dataset preprocessing 
 The analysis uses single dataset:  
@@ -56,14 +58,18 @@ Data was split into X and Y dataset. X columns represent the input(The numerical
 Additionally clustering was done among officers using KMeans based on pay patterns . We have also summarized the clustering analysis.
 
 Testing with 2023 data
-The Cleaned_data_test which is cleaned dataset of Employee Earnings Data (2023) 
+The Cleaned_data_test which is cleaned dataset of Employee Earnings Data (2023) and testing was done by ML_Model_DS_test.ipynb
+The models used are Random Forest Regressor and Xgboost models.
+Model results: Random Forest Model Mean Absolute Error (MAE): $9,578.76 R² Score: 0.123
+Xg BOOST Model Mean Absolute Error (MAE): $10,010.79 R² Score: 0.045
 
 ## Codes:
 - Boston_Police_Overtime.ipynb explains the data preprocessing and cleaning part. It also visualizes distribution of regular pay for different apartments using bar and pie plots.This code uses employee_earnings_report_2024.csv and creates cleaned_police_overtime_data.csv.
 - data_visualization.ipynb explains the data visualization part of the project. This code uses cleaned_police_overtime_data.csv.
 - ML_Model_DS_Project.ipynb explains the models part of the project. This code uses cleaned_police_overtime_data.csv.
 - Classification_model.ipynb explains the classification part to predict the high overtime earners and low overtime earners.This code uses cleaned_police_overtime_data.csv.
-
+- Boston_Police_Overtime_test.ipynb creates the cleaned dataset of Employee Earnings Data (2023) which is Cleaned_data_test.
+- ML_Model_DS_test.ipynb this code tests the Cleaned_data_test dataset using the Random Forest Regressor and Xgboost models.
 
 ## Goals achieved:  
 - Shifts in funding across departments.  
@@ -78,6 +84,9 @@ The Cleaned_data_test which is cleaned dataset of Employee Earnings Data (2023)
 
 ## Tech Stack  
 - **Python** (data preprocessing, ML models)  
-- **Google Colab** (development environment, notebooks)  
+- **Google Colab** (development environment, notebooks)
+- **Visual Studio Code** (development environment)
+- **Flask**
+- **Javascript** 
+- **HTML/CSS Boostrap** 
 
----

@@ -73,6 +73,7 @@ The Cleaned_data_test which is cleaned dataset of Employee Earnings Data (2023)
 - Explored clustering of officers based on scatter plot of overtime pay vs regular pay.
 - Predicted overtime costs for different dataset that is 2023 data.
 - Build classification model to predict which officers are likely to become “high overtime earners” in 2024 data.
+- Explainatory website which explains the project including the machine learning model xgboost predicting the overtime costs given the input parameters.
   
 
 ## Tech Stack  
